@@ -11,15 +11,22 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //MARK: Properties
+    
+    private let screen = UIScreen.main.bounds.size
+    
     var body: some View {
         ZStack {
-            Sparkle(.red, 0.3, 0)
-            Sparkle(.green, 0.9, 100)
-            Sparkle(.yellow, 1.4, -100)
-            Sparkle(.blue, 2.1, 200)
-            Sparkle(.pink, 2.7, -200)
-            Sparkle(.purple, 3.5, 50)
+            Sparkle(.topLeading)
+            Sparkle(.centerTop)
+            Sparkle(.center)
+            Sparkle(.centerBottom)
+            
+            Stencil()
         }
+        .background(.black)
+        .ignoresSafeArea()
+        
     }
 }
 
