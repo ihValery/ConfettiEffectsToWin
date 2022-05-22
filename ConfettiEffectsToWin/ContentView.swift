@@ -18,6 +18,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Sparkle(.topLeading)
+            Sparkle(.topTrailing)
+            Sparkle(.bottomLeading)
+            Sparkle(.bottomTrailing)
             Sparkle(.centerTop)
             Sparkle(.center)
             Sparkle(.centerBottom)

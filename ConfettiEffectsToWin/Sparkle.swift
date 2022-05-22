@@ -37,9 +37,10 @@ struct Sparkle: View {
 struct Sparkle_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            Sparkle(.centerTop)
-            Sparkle(.center)
-            Sparkle(.centerBottom)
+            Sparkle(.topLeading)
+            Sparkle(.topTrailing)
+            Sparkle(.bottomTrailing)
+            Sparkle(.bottomLeading)
         }
     }
 }
@@ -50,7 +51,7 @@ enum DesignSparkle {
     
     case topLeading
     case topTrailing
-    case bottonTrailing
+    case bottomTrailing
     case bottomLeading
     case centerTop
     case center
@@ -60,7 +61,7 @@ enum DesignSparkle {
         switch self {
         case .topLeading: return .red
         case .topTrailing: return .green
-        case .bottonTrailing: return .pink
+        case .bottomTrailing: return .pink
         case .bottomLeading: return .blue
         case .centerTop: return .purple
         case .center: return .yellow
@@ -72,7 +73,7 @@ enum DesignSparkle {
         switch self {
         case .topLeading: return 0.5
         case .topTrailing: return 1.0
-        case .bottonTrailing: return 0.7
+        case .bottomTrailing: return 0.7
         case .bottomLeading: return 1.3
         case .centerTop: return 0.3
         case .center: return 0.1
@@ -83,17 +84,27 @@ enum DesignSparkle {
     var direction: Double {
         switch self {
         case .topLeading: return .random(in: 0...Double.pi / 2)
-        case .topTrailing: return .random(in: 0...Double.pi / 2)
-        case .bottonTrailing: return .random(in: 0...Double.pi / 2)
-        case .bottomLeading: return .random(in: 0...Double.pi / 2)
+        case .topTrailing: return .random(in: Double.pi / 2...Double.pi)
+        case .bottomTrailing: return .random(in: Double.pi...Double.pi * 3 / 2)
+        case .bottomLeading: return .random(in: -Double.pi / 2...0)
+        
         case .centerTop: return .random(in: -Double.pi...Double.pi)
         case .center: return .random(in: -Double.pi...Double.pi)
         case .centerBottom: return .random(in: -Double.pi...Double.pi)
         }
     }
     
+    
     var duration: Double {
-        self == .center || self == .centerTop || self == .centerBottom ? .random(in: 3...4.5) : 2
+        switch self {
+        case .topLeading: return 2.0
+        case .topTrailing: return 2.4
+        case .bottomTrailing: return 2.2
+        case .bottomLeading: return 2.1
+        case .centerTop: return 5
+        case .center: return 4
+        case .centerBottom: return 4.5
+        }
     }
     
     var radius: Double {
@@ -108,11 +119,11 @@ enum DesignSparkle {
         switch self {
         case .topLeading: return .init(x: 0, y: 0)
         case .topTrailing: return .init(x: grProxy.size.width, y: 0)
-        case .bottonTrailing: return .init(x: grProxy.size.width, y: grProxy.size.height)
+        case .bottomTrailing: return .init(x: grProxy.size.width, y: grProxy.size.height)
         case .bottomLeading: return .init(x: 0, y: grProxy.size.height)
-        case .centerTop: return .init(x: grProxy.size.width / 2 - 100, y: grProxy.size.height / 2 - 70)
+        case .centerTop: return .init(x: grProxy.size.width / 2 - 90, y: grProxy.size.height / 2 - 150)
         case .center: return .init(x: grProxy.size.width / 2, y: grProxy.size.height / 2)
-        case .centerBottom: return .init(x: grProxy.size.width / 2 + 70, y: grProxy.size.height / 2 + 100)
+        case .centerBottom: return .init(x: grProxy.size.width / 2 + 40, y: grProxy.size.height / 2 + 120)
         }
     }
 }
