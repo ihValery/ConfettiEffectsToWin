@@ -7,11 +7,18 @@
 
 import SwiftUI
 
+//MARK: - ContentView
+
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+
+        }
     }
 }
+
+//MARK: - PreviewProvider
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
