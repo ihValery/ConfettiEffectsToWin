@@ -11,6 +11,7 @@
 		80D601CD283A634000DCA3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D601CC283A634000DCA3EE /* Assets.xcassets */; };
 		80D601D0283A634000DCA3EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D601CF283A634000DCA3EE /* Preview Assets.xcassets */; };
 		80D601D9283A745000DCA3EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601D8283A745000DCA3EE /* ContentView.swift */; };
+		80D601DB283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		80D601CC283A634000DCA3EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D601CF283A634000DCA3EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80D601D8283A745000DCA3EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiGeometryEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				80D601C8283A634000DCA3EE /* ConfettiEffectsToWinApp.swift */,
+				80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */,
 				80D601D8283A745000DCA3EE /* ContentView.swift */,
 				80D601CC283A634000DCA3EE /* Assets.xcassets */,
 				80D601CE283A634000DCA3EE /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D601DB283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift in Sources */,
 				80D601D9283A745000DCA3EE /* ContentView.swift in Sources */,
 				80D601C9283A634000DCA3EE /* ConfettiEffectsToWinApp.swift in Sources */,
 			);
