@@ -11,7 +11,7 @@ import SwiftUI
 struct ConfettiEffectsToWinApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ConfettiTrophyView()
         }
     }
 }

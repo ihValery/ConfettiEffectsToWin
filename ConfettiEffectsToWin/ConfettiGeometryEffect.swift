@@ -13,9 +13,11 @@ struct ConfettiGeometryEffect: GeometryEffect {
     
     //MARK: Properties
     
-    private let speed: Double = .random(in: 20...200)
+    private let speed: Double = .random(in: 0...200)
     
-    private let direction: Double = .random(in: -Double.pi...Double.pi)
+    private let direction: Double
+    
+    private let radius: Double
     
     private var time: Double
     
@@ -26,15 +28,17 @@ struct ConfettiGeometryEffect: GeometryEffect {
     
     //MARK: Initializer
     
-    init(_ time: Double) {
+    init(time: Double, direction: Double, radius: Double) {
         self.time = time
+        self.direction = direction
+        self.radius = radius
     }
     
     //MARK: Methods
 
     func effectValue(size: CGSize) -> ProjectionTransform {
-        let xTranslation = speed * cos(direction) * time
-        let yTranslation = speed * sin(direction) * time
+        let xTranslation = speed * cos(direction) * time / radius
+        let yTranslation = speed * sin(direction) * time / radius
         let affineTranslation = CGAffineTransform(translationX: xTranslation, y: yTranslation)
         
         return ProjectionTransform(affineTranslation)

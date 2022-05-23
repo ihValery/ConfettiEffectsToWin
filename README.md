@@ -1,6 +1,6 @@
 # Confetti Effects To Win
 
-<img src="https://github.com/ihValery"></a>
+<img src="https://github.com/ihValery/ConfettiEffectsToWin/Image/Confetti.gif"></a>
 
 - Для начала создайте структуру типа GeometryEffect.
     - Нам нужно определить время, скорость и направление для частиц. 

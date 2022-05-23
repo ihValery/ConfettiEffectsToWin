@@ -7,24 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		804B79DA283BA899008039F6 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B79D9283BA899008039F6 /* TabBarView.swift */; };
+		804B79DC283BA8A6008039F6 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B79DB283BA8A5008039F6 /* TabBarModel.swift */; };
+		804B79DE283BA8AC008039F6 /* TabBarVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B79DD283BA8AC008039F6 /* TabBarVM.swift */; };
+		804B79E0283BA914008039F6 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B79DF283BA914008039F6 /* PreferenceKeys.swift */; };
+		804B79E2283BAA04008039F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B79E1283BAA04008039F6 /* ContentView.swift */; };
 		80D601C9283A634000DCA3EE /* ConfettiEffectsToWinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601C8283A634000DCA3EE /* ConfettiEffectsToWinApp.swift */; };
 		80D601CD283A634000DCA3EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D601CC283A634000DCA3EE /* Assets.xcassets */; };
 		80D601D0283A634000DCA3EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D601CF283A634000DCA3EE /* Preview Assets.xcassets */; };
-		80D601D9283A745000DCA3EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601D8283A745000DCA3EE /* ContentView.swift */; };
+		80D601D9283A745000DCA3EE /* ConfettiTrophyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601D8283A745000DCA3EE /* ConfettiTrophyView.swift */; };
 		80D601DB283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */; };
 		80D601DF283A7C1600DCA3EE /* ParticlesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601DE283A7C1600DCA3EE /* ParticlesModifier.swift */; };
 		80D601E1283A811F00DCA3EE /* Sparkle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601E0283A811F00DCA3EE /* Sparkle.swift */; };
+		80D601E3283A84FB00DCA3EE /* Stencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D601E2283A84FB00DCA3EE /* Stencil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		804B79D9283BA899008039F6 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		804B79DB283BA8A5008039F6 /* TabBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
+		804B79DD283BA8AC008039F6 /* TabBarVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVM.swift; sourceTree = "<group>"; };
+		804B79DF283BA914008039F6 /* PreferenceKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		804B79E1283BAA04008039F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80D601C5283A634000DCA3EE /* ConfettiEffectsToWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConfettiEffectsToWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D601C8283A634000DCA3EE /* ConfettiEffectsToWinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiEffectsToWinApp.swift; sourceTree = "<group>"; };
 		80D601CC283A634000DCA3EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D601CF283A634000DCA3EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		80D601D8283A745000DCA3EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80D601D8283A745000DCA3EE /* ConfettiTrophyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiTrophyView.swift; sourceTree = "<group>"; };
 		80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiGeometryEffect.swift; sourceTree = "<group>"; };
 		80D601DE283A7C1600DCA3EE /* ParticlesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesModifier.swift; sourceTree = "<group>"; };
 		80D601E0283A811F00DCA3EE /* Sparkle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkle.swift; sourceTree = "<group>"; };
+		80D601E2283A84FB00DCA3EE /* Stencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stencil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +70,16 @@
 			isa = PBXGroup;
 			children = (
 				80D601C8283A634000DCA3EE /* ConfettiEffectsToWinApp.swift */,
+				80D601D8283A745000DCA3EE /* ConfettiTrophyView.swift */,
+				804B79E1283BAA04008039F6 /* ContentView.swift */,
 				80D601DA283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift */,
 				80D601DE283A7C1600DCA3EE /* ParticlesModifier.swift */,
-				80D601D8283A745000DCA3EE /* ContentView.swift */,
 				80D601E0283A811F00DCA3EE /* Sparkle.swift */,
+				80D601E2283A84FB00DCA3EE /* Stencil.swift */,
+				804B79D9283BA899008039F6 /* TabBarView.swift */,
+				804B79DB283BA8A5008039F6 /* TabBarModel.swift */,
+				804B79DD283BA8AC008039F6 /* TabBarVM.swift */,
+				804B79DF283BA914008039F6 /* PreferenceKeys.swift */,
 				80D601CC283A634000DCA3EE /* Assets.xcassets */,
 				80D601CE283A634000DCA3EE /* Preview Content */,
 			);
@@ -147,9 +165,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D601E1283A811F00DCA3EE /* Sparkle.swift in Sources */,
+				804B79E2283BAA04008039F6 /* ContentView.swift in Sources */,
+				804B79DC283BA8A6008039F6 /* TabBarModel.swift in Sources */,
+				804B79E0283BA914008039F6 /* PreferenceKeys.swift in Sources */,
 				80D601DF283A7C1600DCA3EE /* ParticlesModifier.swift in Sources */,
+				804B79DA283BA899008039F6 /* TabBarView.swift in Sources */,
+				804B79DE283BA8AC008039F6 /* TabBarVM.swift in Sources */,
 				80D601DB283A7ADD00DCA3EE /* ConfettiGeometryEffect.swift in Sources */,
-				80D601D9283A745000DCA3EE /* ContentView.swift in Sources */,
+				80D601D9283A745000DCA3EE /* ConfettiTrophyView.swift in Sources */,
+				80D601E3283A84FB00DCA3EE /* Stencil.swift in Sources */,
 				80D601C9283A634000DCA3EE /* ConfettiEffectsToWinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
