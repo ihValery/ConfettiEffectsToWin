@@ -1,5 +1,5 @@
 # Confetti Effects To Win
-
+[url=https://ibb.co/sgGs8hN][img]https://i.ibb.co/sgGs8hN/Confetti.gif[/img][/url]
 <img src="https://github.com/ihValery/ConfettiEffectsToWin/blob/main/Image/Confetti.gif?raw=true"></a>
 
 - Для начала создайте структуру типа GeometryEffect.
