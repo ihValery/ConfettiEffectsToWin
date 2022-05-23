@@ -69,18 +69,6 @@ enum DesignSparkle {
         }
     }
     
-    var delay: Double {
-        switch self {
-        case .topLeading: return 0.5
-        case .topTrailing: return 1.0
-        case .bottomTrailing: return 0.7
-        case .bottomLeading: return 1.3
-        case .centerTop: return 0.3
-        case .center: return 0.1
-        case .centerBottom: return 0.5
-        }
-    }
-    
     var direction: Double {
         switch self {
         case .topLeading: return .random(in: 0...Double.pi / 2)

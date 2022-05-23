@@ -24,7 +24,7 @@ struct ParticlesModifier: ViewModifier {
     func body(content: Content) -> some View {
         ForEach(0...80, id: \.self) { index in
             content
-//                .hueRotation(.degrees(time * 30))
+                .hueRotation(.degrees(time * 80))
                 .scaleEffect(scale)
                 .modifier(ConfettiGeometryEffect(time: time, direction: design.direction, radius: design.radius))
                 .opacity((design.duration - time) / design.duration)
@@ -32,9 +32,7 @@ struct ParticlesModifier: ViewModifier {
         .onAppear {
             withAnimation(
                 .easeOut(duration: design.duration)
-                .repeatForever(autoreverses: false)
-//                .delay(design.delay)
-            ) {
+                .repeatForever(autoreverses: false)) {
                     
                     time = design.duration
                     scale = design.scale

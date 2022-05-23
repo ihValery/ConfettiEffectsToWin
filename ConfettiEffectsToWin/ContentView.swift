@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  ConfettiEffectsToWin
 //
-//  Created by Валерий Игнатьев on 22.05.22.
+//  Created by Валерий Игнатьев on 23.05.22.
 //
 
 import SwiftUI
@@ -13,23 +13,19 @@ struct ContentView: View {
     
     //MARK: Properties
     
-    private let screen = UIScreen.main.bounds.size
+    @AppStorage("selectTab") var selectTab: TabBarModel = .left
     
     var body: some View {
         ZStack {
-            Sparkle(.topLeading)
-            Sparkle(.topTrailing)
-            Sparkle(.bottomLeading)
-            Sparkle(.bottomTrailing)
-            Sparkle(.centerTop)
-            Sparkle(.center)
-            Sparkle(.centerBottom)
+            switch selectTab {
+            case .left: Color.teal.opacity(0.5)
+            case .sparkles: ConfettiTrophyView()
+            case .right: Color.red.opacity(0.5)
+            }
             
-            Stencil()
+            TabBarView($selectTab)
         }
-        .background(.black)
-        .ignoresSafeArea()
-        
+//        .ignoresSafeArea()
     }
 }
 
